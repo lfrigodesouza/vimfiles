@@ -1,8 +1,13 @@
+set relativenumber
+set number
+set ruler
 set hlsearch
 set ignorecase
 set incsearch
 syntax on
 set smartcase
-set relativenumber
-set fileencoding=utf8
+set fileencoding=utfa8
+set laststatus=2
+set statusline+=%F
+"set title
 colors Tomorrow-Night-Eighties
