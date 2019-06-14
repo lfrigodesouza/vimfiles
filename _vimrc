@@ -18,6 +18,7 @@ set nowrap
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 if has('gui_running')
     set guifont=Fira_Code:h10:cANSI:qDRAFT
+    set lines=999 columns=999
 endif
 "set title
 set renderoptions=type:directx
