@@ -7,8 +7,12 @@ Conteúdo:
 	* pathogen
 * bundle
 	* nerdtree
+	* vim-airline
+	* vim-airline-themes
+	* vim-easymotion
 * colors
- 	*Tomorrow-Night-Eighties
+ 	* Tomorrow-Night-Eighties
+	* blackboard
 
 # Arquivos de configuração
 O arquivo .vimrc pode ser adicionado no diretório ~\\

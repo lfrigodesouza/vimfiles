@@ -1,4 +1,4 @@
-"execute pathogen#infect()
+execute pathogen#infect()
 set number
 set ruler
 set encoding=utf8
@@ -9,9 +9,9 @@ syntax on
 set smartcase
 set relativenumber
 set laststatus=2
-set statusline+=%F
-"colors elflord
-cd ~\Documents
+"set statusline+=%F
+colorscheme Tomorrow-Night-Eighties
+cd C:\Repos
 set cursorline
 set cursorcolumn
 set nowrap
@@ -23,3 +23,6 @@ endif
 "set title
 set renderoptions=type:directx
 set autoread
+:let g:airline_powerline_fonts = 1
+:let g:airline_theme='deus'
+:let g:EasyMotion_smartcase = 1
