@@ -11,8 +11,9 @@ Conteúdo:
 	* vim-airline-themes
 	* vim-easymotion
 * colors
- 	* Tomorrow-Night-Eighties
+	* Tomorrow-Night-Eighties
 	* blackboard
+	* edge
 
 # Arquivos de configuração
 O arquivo .vimrc pode ser adicionado no diretório ~\\
