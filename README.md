@@ -4,16 +4,19 @@ Devem ir no diretório ~\\.vim
 
 Conteúdo:
 * autoload
-	* pathogen
+    * pathogen
 * bundle
-	* nerdtree
-	* vim-airline
-	* vim-airline-themes
-	* vim-easymotion
+    * nerdtree
+    * vim-airline
+    * vim-airline-themes
+    * vim-easymotion
+    * vim-multiple-cursors
+    * vim-surround
+
 * colors
-	* Tomorrow-Night-Eighties
-	* blackboard
-	* edge
+    * Tomorrow-Night-Eighties
+    * blackboard
+    * edge
 
 # Arquivos de configuração
 O arquivo .vimrc pode ser adicionado no diretório ~\\
