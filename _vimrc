@@ -6,8 +6,9 @@ set ruler
 set hlsearch
 set ignorecase
 set incsearch
+set autoindent
 syntax on
-set smartcase
+"set smartcase
 set relativenumber
 set laststatus=2
 set t_Co=256
@@ -34,3 +35,5 @@ set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:�
 autocmd FileType gitcommit set textwidth=72
 set colorcolumn=+1
 autocmd FileType gitcommit set colorcolumn+=51
+set backspace=indent,eol,start
+
