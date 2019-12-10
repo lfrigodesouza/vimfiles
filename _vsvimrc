@@ -9,7 +9,7 @@ map <Space>f :vsc ReSharper.ReSharper_GotoFileMember<CR>
 map <Space>e :vsc ReSharper.ReSharper_GotoNextErrorInSolution<CR>
 map <Space>E :vsc ReSharper.ReSharper_GotoPrevErrorInSolution<CR>
 map <Space>s :vsc ReSharper.ReSharper_SurroundWith<CR>
-map <Space>l :vsc ReSharper.ReSharper_LiveTemplatesInsert
+map <Space>l :vsc ReSharper.ReSharper_LiveTemplatesInsert<CR>
 map <Space>u :vsc ReSharper.ReSharper_GotoUsage<CR>
 map <Space>d :vsc ReSharper.ReSharper_DuplicateText<CR>
 map <Space>, :vsc ReSharper.ReSharper_GotoText<CR>
@@ -22,11 +22,14 @@ map <Space>td :vsc ReSharper.ReSharper_UnitTestDebugContext<CR>
 map <Space>ta :vsc ReSharper.ReSharper_UnitTestRunSolution<CR>
 map <Space>tl :vsc ReSharper.ReSharper_UnitTestSessionRepeatPreviousRun<CR>
 map <Space>tt :vsc ReSharper.ReSharper_ShowUnitTestSessions<CR>
+map <Space>tc :vsc ReSharper.ReSharper_CoverAllTestsFromSolution<CR>
+map <Space>se :vsc Resharper.Resharper_LocateInSolutionOrAssemblyExplorer<CR>
 map <Space>/ :vsc ReSharper.ReSharper_LineComment<CR>
 map <Space>qk :vsc Tools.CustomizeKeyboard<CR>
 map <Space>b :vsc Build.BuildSolution<CR>
 map <Space><Space> :vsc Tools.InvokeAceJumpCommand<CR>
 map <Space>; A;<Esc>
+map <Space>c :vsc Resharper.Resharper_SilentCleanupCode<CR>
 map ] :vsc ReSharper.ReSharper_GotoNextMethod<CR>
 map [ :vsc ReSharper.ReSharper_GotoPrevMethod<CR>
-map zl :e $VIM/_vsvimrc<CR>
+map zl :e ~/_vsvimrc<CR>
