@@ -12,6 +12,9 @@ Conteúdo:
     * vim-easymotion
     * vim-multiple-cursors
     * vim-surround
+    * dart-vim-plugin
+    * vim-wakatime
+    * vim-flutter
 
 * colors
     * Tomorrow-Night-Eighties
