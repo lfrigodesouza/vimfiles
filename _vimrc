@@ -1,4 +1,3 @@
-"execute pathogen#infect()
 call plug#begin('./vimfiles/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
@@ -9,6 +8,10 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'easymotion/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'thosakwe/vim-flutter'
+Plug 'yggdroot/indentline'
+Plug 'airblade/vim-gitgutter'
+Plug 'mbbill/undotree'
+Plug 'majutsushi/tagbar'
 call plug#end()
 
 set encoding=utf-8
@@ -31,8 +34,8 @@ set cursorcolumn
 set nowrap
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 if has('gui_running')
-    set guifont=Fira_Code:h10:cANSI:qDRAFT
-    set lines=999 columns=999
+    set guifont=Cascadia_Code_PL:h10:cANSI:qDRAFT
+    set lines=40 columns=175
     set guioptions -=m 
     set guioptions -=T
 endif
