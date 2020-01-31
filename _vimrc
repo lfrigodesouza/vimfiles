@@ -1,4 +1,16 @@
-execute pathogen#infect()
+"execute pathogen#infect()
+call plug#begin('./vimfiles/plugged')
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'sheerun/vim-polyglot'
+Plug 'sainnhe/edge'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'easymotion/vim-easymotion'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'thosakwe/vim-flutter'
+call plug#end()
+
 set encoding=utf-8
 scriptencoding utf-8
 set number
