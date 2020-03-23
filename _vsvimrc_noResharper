@@ -1,8 +1,12 @@
 set hlsearch
 set ignorecase
 set incsearch
+set clipboard=unnamed
+set timeoutlen=200
 
 map gd :vsc ReSharper.ReSharper_GotoDeclaration<CR>
+map <Space>cl :vsc Edit.CollapsetoDefinitions<CR>
+map <Space>sc :vsc Edit.StopOutlining<CR>
 map <Space>p :vsc Debug.Reattach<CR>
 map <Space>r :vsc Refactor.Rename<CR>
 map <Space>f :vsc ReSharper.ReSharper_GotoFileMember<CR>
@@ -30,3 +34,8 @@ map <Space>; A;<Esc>
 map ] :vsc Edit.NextMethod<CR>
 map [ :vsc Edit.PreviousMethod<CR>
 map zl :e $VIM/_vsvimrc<CR>
+map oo m`o<Esc>``
+map OO m`O<Esc>``
+map zl :e ~/_vsvimrc<CR>
+map jk <Esc>
+map kj <Esc>
