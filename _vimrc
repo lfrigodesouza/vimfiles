@@ -22,6 +22,7 @@ set hlsearch
 set ignorecase
 set incsearch
 set autoindent
+set clipboard=unnamed
 syntax on
 "set smartcase
 set relativenumber

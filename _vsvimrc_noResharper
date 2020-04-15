@@ -29,6 +29,10 @@ map <Space>tt :vsc ReSharper.ReSharper_ShowUnitTestSessions<CR>
 map <Space>/ :vsc Edit.ToggleLineComment<CR>
 map <Space>qk :vsc Tools.CustomizeKeyboard<CR>
 map <Space>b :vsc Build.BuildSolution<CR>
+map <Space>pt :vsc Window.PinTab<CR>
+map <Space>fc :vsc File.Close<CR>
+map <Space>cp :vsc Window.CloseAllButPinned<CR>
+map <Space>ca :vsc Window.CloseAllDocuments<CR>
 map <Space><Space> :vsc Tools.InvokeAceJumpCommand<CR>
 map <Space>; A;<Esc>
 map ] :vsc Edit.NextMethod<CR>
@@ -37,5 +41,6 @@ map zl :e $VIM/_vsvimrc<CR>
 map oo m`o<Esc>``
 map OO m`O<Esc>``
 map zl :e ~/_vsvimrc<CR>
+map zr :source ~\_vsvimrc<CR>
 map jk <Esc>
 map kj <Esc>
