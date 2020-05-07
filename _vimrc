@@ -1,4 +1,4 @@
-call plug#begin('./vimfiles/plugged')
+call plug#begin('~/vimfiles/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'sainnhe/edge'
@@ -24,7 +24,6 @@ set incsearch
 set autoindent
 set clipboard=unnamed
 syntax on
-"set smartcase
 set relativenumber
 set laststatus=2
 set t_Co=256
