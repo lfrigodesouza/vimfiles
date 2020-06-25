@@ -38,7 +38,7 @@ map <Space>fc :vsc File.Close<CR>
 map <Space>cp :vsc Window.CloseAllButPinned<CR>
 map <Space>ca :vsc Window.CloseAllDocuments<CR>
 map <Space><Space> :vsc Tools.InvokeAceJumpCommand<CR>
-map <Space>; A;<Esc>
+map <Space>; m`A;<Esc>``
 map <Space>c :vsc Resharper.Resharper_SilentCleanupCode<CR>
 map ] :vsc ReSharper.ReSharper_GotoNextMethod<CR>
 map [ :vsc ReSharper.ReSharper_GotoPrevMethod<CR>
@@ -48,3 +48,7 @@ map zl :e ~\_vsvimrc<CR>
 map zr :source ~\_vsvimrc<CR>
 map jk <Esc>
 map kj <Esc>
+map Q @q
+map <Space>n :noh<CR>
+map <Space>ws :vsc Window.NewHorizontalTabGroup<CR>
+map <Space>wv :vsc Window.NewVerticalTabGroup<CR>

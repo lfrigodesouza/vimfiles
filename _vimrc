@@ -12,7 +12,19 @@ Plug 'yggdroot/indentline'
 Plug 'airblade/vim-gitgutter'
 Plug 'mbbill/undotree'
 Plug 'majutsushi/tagbar'
+Plug 'taniarascia/new-moon.vim'
+Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'w0rp/ale'
+Plug 'jonathanfilip/vim-lucius'
+Plug 'sonph/onehalf'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
+
 
 set encoding=utf-8
 scriptencoding utf-8
@@ -23,11 +35,12 @@ set ignorecase
 set incsearch
 set autoindent
 set clipboard=unnamed
+colorscheme nord
 syntax on
+set smartcase
 set relativenumber
 set laststatus=2
 set t_Co=256
-colorscheme edge
 cd C:/Repos
 set cursorline
 set cursorcolumn
@@ -42,7 +55,7 @@ endif
 set renderoptions=type:directx
 set autoread
 :let g:airline_powerline_fonts = 1
-:let g:airline_theme='deus'
+:let g:airline_theme='nord'
 :let g:EasyMotion_smartcase = 1
 set list
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
@@ -51,4 +64,14 @@ autocmd FileType gitcommit set textwidth=72
 set colorcolumn=+1
 autocmd FileType gitcommit set colorcolumn+=51
 set backspace=indent,eol,start
+
+map <Space>; m`A;<Esc>``
+map oo m`o<Esc>``
+map OO m`O<Esc>``
+map <silent> zl :e ~\_vimrc<CR>
+map <silent> zr :source ~\_vimrc<CR>
+map <silent> <F2> :NERDTreeToggle<CR>
+map Q @q
+map <Space>d yyp
+map <silent> <Space>/ :noh<CR>
 
