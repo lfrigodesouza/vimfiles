@@ -1,0 +1,36 @@
+set hlsearch
+set ignorecase
+set incsearch
+set clipboard=unnamed
+set timeoutlen=200
+set number
+set relativenumber
+
+map ] :action MethodDown<CR>
+map [ :action MethodUp<CR>
+map <Space>n :noh<CR>
+map <Space>e :action ReSharperGotoNextErrorInSolution<CR>
+map <Space>E :action ReSharperGotoPrevErrorInSolution<CR>
+map <Space>/ :action CommentByLineComment<CR>
+map <Space>r :action RenameElement<CR>
+map <Space>b :action BuildSolutionAction<CR>
+map <Space>d :action EditorDuplicate<CR>
+map <Space>t :action GotoSymbol<CR>
+map <Space>cp :action CloseAllUnpinnedEditors<CR>
+map <Space>ca :action CloseAllEditors<CR>
+map <Space>fc :action CloseActiveTab<CR>
+map <Space>pt :action PinActiveTab<CR>
+map <Space>tt :action ActivateUnitTestsToolWindow<CR>
+map <Space>tr :action Rider.UnitTesting.RunContext<CR>
+map <Space>td :action RiderUnitTestDebugContextAction<CR>
+map <Space>ta :action Rider.UnitTesting.RunSolution<CR>
+map <Space>tc :action RunCoverage<CR>
+map <Space>is :action RiderInspect<CR>
+map oo mmo<Esc>`m
+map OO mmO<Esc>`m
+map <Space>; mmA;<Esc>`m
+map zl :e ~\.ideavimrc<CR>
+map zr :source ~\.ideavimrc<CR>
+map jk <Esc>
+map kj <Esc>
+map Q @q
