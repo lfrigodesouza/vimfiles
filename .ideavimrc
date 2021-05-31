@@ -2,41 +2,51 @@ set hlsearch
 set ignorecase
 set incsearch
 set clipboard=unnamed
-set number
-set relativenumber
+set relativenumber number
+set timeoutlen=300
 
-map <Space>n :noh<CR>
+map gd :action GotoDeclaration<CR>
+map <Space>cl :action RiderCollapseToDefinitions<CR>
+map <Space>ec :action ExpandAllRegions<CR>
+map <Space>r :action RenameElement<CR>
+map <Space>f :action GotoSymbol<CR>
 map <Space>e :action ReSharperGotoNextErrorInSolution<CR>
 map <Space>E :action ReSharperGotoPrevErrorInSolution<CR>
-map <Space>/ :action CommentByLineComment<CR>
-map <Space>r :action RenameElement<CR>
-map <Space>b :action BuildSolutionAction<CR>
-map <Space>d :action EditorDuplicate<CR>
 map <Space>s :action SurroundWith<CR>
 map <Space>l :action InsertLiveTemplate<CR>
-map <Space>u :action FindUsagesInFile<CR>
+map <Space>u :action FindUsages<CR>
+map <Space>d :action EditorDuplicate<CR>
 map <Space>v :action IntroduceVariable<CR>
 map <Space>m :action ExtractMethod<CR>
 map <Space>o :action Move<CR>
-map <Space>tf :action GotoSymbol<CR>
-map <Space>cc :action SilentCodeCleanup<CR>
-map <Space>cp :action CloseAllUnpinnedEditors<CR>
-map <Space>ca :action CloseAllEditors<CR>
-map <Space>fc :action CloseActiveTab<CR>
-map <Space>pt :action PinActiveTab<CR>
-map <Space>tt :action ActivateUnitTestsToolWindow<CR>
+map <Space>t :action GotoClass<CR>
+map <Space>sd :action ReSharperSelectContainingDeclaration<CR>
 map <Space>tr :action Rider.UnitTesting.RunContext<CR>
 map <Space>td :action RiderUnitTestDebugContextAction<CR>
 map <Space>ta :action Rider.UnitTesting.RunSolution<CR>
-map <Space>is :action RiderInspect<CR>
+map <Space>tt :action ActivateUnitTestsToolWindow<CR>
+map <Space>tc :action RiderUnitTestCoverSolutionAction<CR>
+map <Space>se :action LocateInSolutionView<CR>
+map <Space>is :action InspectThis<CR>
+map <Space>/ :action CommentByLineComment<CR>
+map <Space>pt :action PinActiveTab<CR>
+map <Space>fc :action CloseActiveTab<CR>
+map <Space>cp :action CloseAllUnpinnedEditors<CR>
+map <Space>ca :action CloseAllEditors<CR>
 map <Space><Space> :action AceAction<CR>
-map oo mmo<Esc>`m
-map OO mmO<Esc>`m
+map <Space>b :action BuildSolutionAction<CR>
+map <Space>cc :action SilentCodeCleanup<CR>
 map <Space>; mmA;<Esc>`m
+map <Space>n :noh<CR>
+map <Space>ws :action SplitHorizontally<CR>
+map <Space>wv :action SplitVertically<CR>
 map zl :e ~\.ideavimrc<CR>
 map zr :source ~\.ideavimrc<CR>
+map za :actionlist<CR>
 map ] :action MethodDown<CR>
 map [ :action MethodUp<CR>
+map oo m`o<Esc>``
+map OO m`O<Esc>``
 map jk <Esc>
 map kj <Esc>
 map Q @q
